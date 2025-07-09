@@ -1,0 +1,53 @@
+body, input, button, textarea {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f7f3f2;
+  margin: 0; padding: 20px;
+  color: #5a4e4d;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center; color: #a27b5c;
+}
+
+a { color: #7daea3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.form-container, .post, .comment {
+  background: #fffdf5;
+  border: 1px solid #e3c9c1;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+input[type="text"], input[type="password"], textarea {
+  width: 100%; padding: 8px; margin: 8px 0;
+  border: 1px solid #d3b8ae; border-radius: 6px;
+  background: #fffbf8;
+}
+
+button {
+  background: #e3c9c1; color: #5a4e4d;
+  border: none; padding: 8px 16px; border-radius: 6px;
+  cursor: pointer; transition: background 0.3s;
+}
+button:hover { background: #d3b6ae; }
+
+.post-list, .comment-list {
+  list-style: none; padding: 0;
+}
+
+.post-list li, .comment-list li {
+  margin-bottom: 12px;
+}
+
+.error { color: #e74c3c; text-align: center; }

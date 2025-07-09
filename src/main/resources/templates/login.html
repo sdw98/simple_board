@@ -2,14 +2,14 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>📝 회원가입</title>
+  <title>🔑 로그인</title>
   <link rel="stylesheet" th:href="@{/styles.css}"/>
 </head>
 <body class="container">
-<h1>📝 회원가입</h1>
+<h1>🔑 로그인</h1>
 <div th:if="${error}" class="error" th:text="${error}"></div>
-<form th:action="@{/signup}"
-      th:object="${signupDto}"
+<form th:action="@{/login}"
+      th:object="${loginDto}"
       method="post"
       class="form-container">
   <label>
@@ -24,8 +24,8 @@
   </label>
   <div th:if="${#fields.hasErrors('password')}"
        th:errors="*{password}"></div>
-  <button type="submit">가입하기</button>
-  <a th:href="@{/login}" class="cansel">로그인</a>
+  <button type="submit">로그인</button>
+  <a th:href="@{/login}" class="cansel">회원가입</a>
 </form>
 </body>
 </html>

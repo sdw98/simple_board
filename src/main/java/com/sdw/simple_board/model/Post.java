@@ -30,7 +30,7 @@ public class Post {
     private LocalDateTime createAt;
 
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name = "author.id")
+    @JoinColumn(name = "author_id")
     private User author;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)

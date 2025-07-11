@@ -20,7 +20,7 @@
        th:errors="*{username}"></div>
   <label>
     비밀번호:
-    <input type="text" th:field="*{password}" />
+    <input type="password" th:field="*{password}" />
   </label>
   <div th:if="${#fields.hasErrors('password')}"
        th:errors="*{password}"></div>
